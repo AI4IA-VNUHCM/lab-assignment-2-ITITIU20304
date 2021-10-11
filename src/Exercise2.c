@@ -19,7 +19,25 @@ int main(int argc, char *argv[]) {
 	int n = atoi(argv[1]);
 	int result;
 	//Your codes here
-	
-	printf("%d", result);
-	return 0;
+	int a;
+    result = 1;
+    if (n>0 && n%2!=0){
+        for (a = 1; a<=n; a++){
+            if(a % 2 != 0){
+            result = result * a;
+            }
+        }
+    }
+    else{
+        for (a = 1; a<=n; a++){
+            if(a % 2 == 0){
+            result = result * a;
+            }
+        }
+    }
+    printf("%d", result);
+    return 0;
 }
+	
+	
+

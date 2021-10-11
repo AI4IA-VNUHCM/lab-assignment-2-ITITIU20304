@@ -15,7 +15,18 @@ int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
 	
 	//Your codes here
-	
-	
-	return 0;
+	int a = 2;
+    const char *new = "";
+    while (testcase!=1){
+        if(testcase%a==0){
+            while(testcase%a==0){
+                printf ("%s%d",new,a);
+                new = " * ";
+                testcase = testcase/a;
+            }
+        }
+        a++;
+    }
+    return 0;
 }
+
